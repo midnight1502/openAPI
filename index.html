@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My OpenAPI Project</title>
+    <title>Cat Navigator</title>
     <meta charset="UTF-8">
     <meta name="description" content="OpenAPI Project">
     <meta name="author" content="Yaroslav Malonos">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
     <body>
+        <section id="breed_selector">
+            <form>
+                <label for="cats">Select a breed:</label>
+                <select id="cats" name="cats" onchange="catBreedSelect()">
+                    <option hidden selected>Choose a breed here</option>
+                </select>
+            </form>
+        </section>
+        <section id="image_slider">
+            <div class="slider-container">
+                <div id="slider" class="slider">
+                    <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Just a cat"></img>
+                </div>
+            <button class="prev-button" aria-label="Switch to the previous slide">&lt;</button>
+            <button class="next-button" aria-label="Switch to the next slide">&gt</button>
+            </div>
+        </section>
+        <section id="breed_info">
+            <h2></h2>
+            <h3></h3>
+            <p></p>
+        </section>
+
+<script src="./js/script.js"></script>
     </body>
 </html>
